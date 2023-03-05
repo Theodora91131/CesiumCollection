@@ -7,6 +7,7 @@ const widget = ref();
 
 onMounted(async () => {
   await createWidget(widget.value);
+  console.log("cesium onmounted");
 });
 </script>
 

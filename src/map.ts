@@ -16,7 +16,7 @@ export const create = async (container: HTMLElement): Promise<CesiumWidget> => {
     imageryProvider,
     creditContainer: document.createElement("div"),
   });
-  const { scene, camera } = widget;
+  const { scene, camera, clock } = widget;
   // post default config
   scene.globe.baseColor = Color.GREY;
   scene.globe.showGroundAtmosphere = false;
