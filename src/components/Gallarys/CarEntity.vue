@@ -36,17 +36,6 @@ const trigger = async () => {
   show = !show;
   const widget = getWidget();
   const { entities } = widget;
-  // const timeSpan = 30;
-  //const totalSeconds = timeSpan * (flightData.length - 1);
-  // const start = Cesium.JulianDate.fromIso8601("2020-10-13T21:10:00Z");
-  // const stop = Cesium.JulianDate.addSeconds(start, totalSeconds, new Cesium.JulianDate());
-
-  //widget.clock.startTime = start.clone();
-  // widget.clock.stopTime = stop.clone();
-  // widget.clock.currentTime = start.clone();
-  //widget.timeline.zoomTo(start, stop);
-  // widget.clock.multiplier = 50;
-  //widget.clock.shouldAnimate = true;
 
   car ??= entities.add(new Car());
 
